@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -10,12 +10,12 @@ const Hero = () => {
       </div>
 
       {/* Grid Pattern */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
                             linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
+          backgroundSize: "60px 60px",
         }}
       />
 
@@ -33,13 +33,14 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-slide-up animation-delay-200">
             <span className="text-foreground">안녕하세요,</span>
             <br />
-            <span className="gradient-text">홍길동</span>
+            <span className="gradient-text">박진</span>
             <span className="text-foreground">입니다</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8 animate-slide-up animation-delay-400">
-            사용자 경험을 최우선으로 생각하는 <span className="text-primary">프론트엔드 개발자</span>입니다.
+            사용자 경험을 최우선으로 생각하는{" "}
+            <span className="text-primary">프론트엔드 개발자</span>입니다.
             <br className="hidden md:block" />
             깔끔한 코드와 아름다운 인터페이스를 만들어갑니다.
           </p>
@@ -63,7 +64,7 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 animate-fade-in animation-delay-600">
             <a
-              href="https://github.com"
+              href="https://github.com/jin-park0115"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass-card text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200"
@@ -71,7 +72,7 @@ const Hero = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/%EC%A7%84-%EB%B0%95-b0a491391/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full glass-card text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200"
@@ -79,7 +80,7 @@ const Hero = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:hello@example.com"
+              href="mailto:parkjin0115@naver.com"
               className="p-3 rounded-full glass-card text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200"
             >
               <Mail size={20} />

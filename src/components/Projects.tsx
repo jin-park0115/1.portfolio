@@ -1,48 +1,60 @@
-import { ExternalLink, Github, Folder } from 'lucide-react';
-
+import { ExternalLink, Github, Folder } from "lucide-react";
+import smartbuyImg from "../assets/smart-buy.png";
+import jejaImg from "../assets/jejaYouth.png";
 const featuredProjects = [
   {
-    title: '투두 앱',
-    description: 'React와 TypeScript를 활용한 할 일 관리 애플리케이션입니다. 로컬 스토리지를 활용한 데이터 영속성과 드래그 앤 드롭 기능을 구현했습니다.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'DnD Kit'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    image: null,
+    title: "Smart Buy",
+    description:
+      "팀은 2명으로 구성되었습니다, React와 TypeScript, Nest.JS를 활용한, AI 상품분석 애플리케이션입니다. 상품검색, 비교 등의 핵심 기능을 구현했습니다.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "Nest",
+      "Postgres",
+      "HyperClovaX",
+      "n8n",
+    ],
+    github: "https://github.com/jin-park0115/smatybuy",
+    live: "https://blog.naver.com/jeanpark0115/224027124839",
+    image: `${smartbuyImg}`,
   },
   {
-    title: '날씨 대시보드',
-    description: '오픈 API를 활용한 날씨 정보 대시보드입니다. 현재 위치 기반 날씨와 5일 예보를 시각화했습니다.',
-    tech: ['React', 'Chart.js', 'OpenWeather API', 'Geolocation'],
-    github: 'https://github.com',
-    live: 'https://example.com',
-    image: null,
+    title: "Jeja Youth",
+    description:
+      "SupaBase를 활용한 제자광성교회 청년들의 영성 체크리스트입니다. 일주일 체크리스트를 시각화했습니다.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Zustand", "Supabase"],
+    github: "https://github.com/jin-park0115/JejaYuth",
+    live: "https://blog.naver.com/jeanpark0115/224055565034",
+    image: `${jejaImg}`,
   },
 ];
 
 const otherProjects = [
   {
-    title: '영화 검색 앱',
-    description: 'TMDB API를 활용한 영화 검색 및 즐겨찾기 기능',
-    tech: ['React', 'Redux', 'TMDB API'],
-    github: 'https://github.com',
+    title: "MoodYunes",
+    description: "AI를 활용한 노래 추천 웹사이트",
+    tech: ["React", "Python", "Tailwind CSS"],
+    github: "https://github.com/Kosa-ncp/ncp-dj",
   },
   {
-    title: '포모도로 타이머',
-    description: '생산성 향상을 위한 집중 타이머 애플리케이션',
-    tech: ['React', 'CSS Animations'],
-    github: 'https://github.com',
+    title: "투두",
+    description: "Next.JS 활용한 투두리스트",
+    tech: ["Next.JS", "TypeScript", "Tailwind CSS"],
+    github: "https://github.com/jin-park0115/nextjs-todo",
   },
   {
-    title: '마크다운 에디터',
-    description: '실시간 미리보기가 가능한 마크다운 에디터',
-    tech: ['React', 'Marked.js', 'LocalStorage'],
-    github: 'https://github.com',
+    title: "Trip Talk",
+    description: "여행 SNS",
+    tech: ["React", "TypeScript", "Redux", "Styled-Components", "Axios"],
+    github: "https://github.com/triptalk-4/triptalk-frontend",
   },
   {
-    title: '퀴즈 게임',
-    description: 'trivia API를 활용한 인터랙티브 퀴즈 게임',
-    tech: ['React', 'TypeScript', 'Framer Motion'],
-    github: 'https://github.com',
+    title: "영화 검색 앱",
+    description: "TMDB API를 활용한 영화 검색 및 즐겨찾기 기능",
+    tech: ["React", "Redux", "TMDB API", "Styled-Components", "firebase"],
+    github: "https://github.com/jin-park0115/film",
   },
 ];
 
@@ -51,13 +63,15 @@ const Projects = () => {
     <section id="projects" className="py-24 relative">
       {/* Background Effect */}
       <div className="absolute right-0 top-1/3 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
-      
+
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Section Header */}
           <div className="flex items-center gap-4 mb-12">
             <span className="font-mono text-primary text-sm">03.</span>
-            <h2 className="text-2xl md:text-3xl font-bold text-foreground">Projects</h2>
+            <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+              Projects
+            </h2>
             <div className="flex-1 h-px bg-border" />
           </div>
 
@@ -67,22 +81,21 @@ const Projects = () => {
               <div
                 key={project.title}
                 className={`grid md:grid-cols-12 gap-4 items-center ${
-                  index % 2 === 1 ? 'md:text-right' : ''
+                  index % 2 === 1 ? "md:text-right" : ""
                 }`}
               >
                 {/* Project Image */}
                 <div
-                  className={`md:col-span-7 ${index % 2 === 1 ? 'md:order-2' : ''}`}
+                  className={`md:col-span-7 ${
+                    index % 2 === 1 ? "md:order-2" : ""
+                  }`}
                 >
                   <div className="relative group">
                     <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-accent/20 rounded-xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="relative aspect-video rounded-xl glass-card overflow-hidden">
                       <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary/5 to-accent/5">
                         <div className="text-center p-8">
-                          <Folder className="w-16 h-16 mx-auto mb-4 text-primary/50" />
-                          <p className="font-mono text-muted-foreground text-sm">
-                            // 프로젝트 스크린샷
-                          </p>
+                          <img src={project.image} alt="" />
                         </div>
                       </div>
                     </div>
@@ -92,10 +105,12 @@ const Projects = () => {
                 {/* Project Info */}
                 <div
                   className={`md:col-span-5 ${
-                    index % 2 === 1 ? 'md:order-1' : ''
+                    index % 2 === 1 ? "md:order-1" : ""
                   }`}
                 >
-                  <span className="font-mono text-primary text-sm">Featured Project</span>
+                  <span className="font-mono text-primary text-sm">
+                    Featured Project
+                  </span>
                   <h3 className="text-xl md:text-2xl font-bold text-foreground mt-2 mb-4">
                     {project.title}
                   </h3>
@@ -104,7 +119,11 @@ const Projects = () => {
                       {project.description}
                     </p>
                   </div>
-                  <div className={`flex flex-wrap gap-2 mb-4 ${index % 2 === 1 ? 'md:justify-end' : ''}`}>
+                  <div
+                    className={`flex flex-wrap gap-2 mb-4 ${
+                      index % 2 === 1 ? "md:justify-end" : ""
+                    }`}
+                  >
                     {project.tech.map((tech) => (
                       <span
                         key={tech}
@@ -114,7 +133,11 @@ const Projects = () => {
                       </span>
                     ))}
                   </div>
-                  <div className={`flex gap-4 ${index % 2 === 1 ? 'md:justify-end' : ''}`}>
+                  <div
+                    className={`flex gap-4 ${
+                      index % 2 === 1 ? "md:justify-end" : ""
+                    }`}
+                  >
                     <a
                       href={project.github}
                       target="_blank"
@@ -134,8 +157,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-            ))
-          }
+            ))}
           </div>
 
           {/* Other Projects */}
