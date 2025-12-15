@@ -57,8 +57,8 @@ const About = () => {
             </div>
 
             {/* Profile Image Placeholder */}
-            <div className="md:col-span-2">
-              <div className="relative group">
+            <div className="md:col-span-2 flex justify-center">
+              <div className="relative group w-full max-w-[280px] md:max-w-[320px]">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-xl blur opacity-25 group-hover:opacity-40 transition-opacity" />
                 <div className="relative aspect-square rounded-xl overflow-hidden glass-card">
                   <img
