@@ -47,7 +47,7 @@ const About = () => {
                 </div>
                 <div className="glass-card p-4 rounded-lg">
                   <div className="font-mono text-primary text-2xl font-bold">
-                    3+
+                    2+
                   </div>
                   <div className="text-muted-foreground text-sm">
                     팀 프로젝트
@@ -61,13 +61,11 @@ const About = () => {
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent rounded-xl blur opacity-25 group-hover:opacity-40 transition-opacity" />
                 <div className="relative aspect-square rounded-xl overflow-hidden glass-card">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center p-6">
-                      <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
-                        <img src={profileImg} alt="" />
-                      </div>
-                    </div>
-                  </div>
+                  <img
+                    src={profileImg}
+                    alt="프로필 사진"
+                    className="w-full h-full object-contain p-6 rounded-xl"
+                  />
                 </div>
               </div>
             </div>
