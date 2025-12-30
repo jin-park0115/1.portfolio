@@ -1,6 +1,7 @@
 import { ExternalLink, Github, Folder } from "lucide-react";
 import smartbuyImg from "../assets/smart-buy.png";
 import jejaImg from "../assets/jejaYouth.png";
+import interviewImg from "../assets/interview.png";
 const featuredProjects = [
   {
     title: "Smart Buy",
@@ -29,9 +30,32 @@ const featuredProjects = [
     live: "https://blog.naver.com/jeanpark0115/224055565034",
     image: `${jejaImg}`,
   },
+  {
+    title: "Interview-chatbot",
+    description:
+      "Gemini API와, FastAPI를 활용한 면접 연습을 할 수 있습니다. 직군을 적고 질문을 생성하면, AI가 질문을 하고, 질문에 답변을 적으면 AI가 답변에 대한 피드백을 해줍니다.",
+    tech: [
+      "Next.JS",
+      "TypeScript",
+      "Tailwind CSS",
+      "Python3",
+      "FastAPI",
+      "Gemini",
+    ],
+    github: "https://github.com/jin-park0115/interview-chatbot-FrontEnd",
+    live: "",
+    image: `${interviewImg}`,
+  },
 ];
 
 const otherProjects = [
+  {
+    title: "christmas_tree",
+    description: "Python을 이용한 노래나오고, 트리에 눈이 내리는 토이프로젝트",
+    tech: ["Python", "LRC"],
+    github:
+      "https://github.com/jin-park0115/christmas_tree/blob/main/christmas_tree.py",
+  },
   {
     title: "MoodYunes",
     description: "AI를 활용한 노래 추천 웹사이트",
@@ -146,14 +170,23 @@ const Projects = () => {
                     >
                       <Github size={20} />
                     </a>
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.live ? (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    ) : (
+                      <span
+                        className="text-muted-foreground/30 cursor-not-allowed"
+                        title="라이브 링크가 없습니다"
+                      >
+                        <ExternalLink size={20} />
+                      </span>
+                    )}
                   </div>
                 </div>
               </div>
