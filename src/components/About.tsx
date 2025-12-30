@@ -39,7 +39,7 @@ const About = () => {
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="glass-card p-4 rounded-lg">
                   <div className="font-mono text-primary text-2xl font-bold">
-                    6+
+                    8+
                   </div>
                   <div className="text-muted-foreground text-sm">
                     개인 프로젝트
