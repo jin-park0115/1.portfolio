@@ -50,11 +50,10 @@ const featuredProjects = [
 
 const otherProjects = [
   {
-    title: "christmas_tree",
+    title: "lrc-christmas_tree",
     description: "Python을 이용한 노래나오고, 트리에 눈이 내리는 토이프로젝트",
     tech: ["Python", "LRC"],
-    github:
-      "https://github.com/jin-park0115/christmas_tree/blob/main/christmas_tree.py",
+    github: "https://github.com/jin-park0115/Lrc-christmas_tree",
   },
   {
     title: "MoodYunes",
