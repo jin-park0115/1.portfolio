@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -34,7 +34,7 @@ const Footer = () => {
           {/* Credit */}
           <div className="text-center">
             <p className="font-mono text-xs text-muted-foreground">
-              Designed & Built by <span className="text-primary">홍길동</span>
+              Designed & Built by <span className="text-primary">박 진</span>
             </p>
             <p className="font-mono text-xs text-muted-foreground mt-1">
               © {new Date().getFullYear()} All rights reserved.

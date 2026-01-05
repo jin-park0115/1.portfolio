@@ -50,6 +50,13 @@ const featuredProjects = [
 
 const otherProjects = [
   {
+    title: "My-blog",
+    description:
+      "Next.JS를 활용한 간단한 블로그 입니다, 아직은 CR밖에 되지 않습니다.",
+    tech: ["Next.JS", "API"],
+    github: "https://github.com/jin-park0115/my-blog",
+  },
+  {
     title: "lrc-christmas_tree",
     description: "Python을 이용한 노래나오고, 트리에 눈이 내리는 토이프로젝트",
     tech: ["Python", "LRC"],
@@ -219,7 +226,8 @@ const Projects = () => {
                 <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 items-center">
+                  skill:
                   {project.tech.map((tech) => (
                     <span
                       key={tech}
